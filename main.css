@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.mainframe{
+    position: fixed;
+    z-index: -1;
+    display: block;
+}
+.box{
+    height: 700px;
+    width: 100%;
+}
+
+.mainframe .bg{
+    height: 600px;
+    background-color: beige;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    display: block;
+}
+
+.text{
+    transform: translate(5%,10%);
+}
+
+.text h1{
+    color: #000;
+    font-weight: bold;
+    font-size: 200px;
+    font-family: 'Silkscreen', cursive;
+}
+.text h6{
+    color: #000;
+    font-size: 60px;
+    text-align: center;
+}
+
+.bg-img{
+    z-index: -1;
+}
+.bg-img img{
+    transform: translate(155%,47.5%);
+    width: 700px;
+    position: fixed;
+}
+
+.my-pic{
+    background-color: #fff;
+}
+
+.my-pic img{
+    border-radius: 50%;
+    transform: translate(10%,150%);
+}
+
+/* mobile view */
+@media screen and (max-width: 480px) {
+    .text h1{
+        color: #000;
+        font-weight: bold;
+        font-size: 60px;
+        font-family: 'Silkscreen', cursive;
+    }
+    .text h6{
+        color: #000;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .text{
+        transform: translate(3.5%,145%);
+    }
+    .bg-img img{
+        width: 380px;
+        transform: translate(0%,172%);
+        position: fixed;
+    }
+  }
